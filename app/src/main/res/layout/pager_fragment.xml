@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fragment_padding">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTextPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/population"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintEnd_toStartOf="@id/tvPopulation"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/tvTextPopulation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTextPopulation"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTextSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/square"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextPopulation"
+        app:layout_constraintEnd_toStartOf="@id/tvSquare"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/tvTextSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTextSquare"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTextPopulationDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/population_density"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSquare"
+        app:layout_constraintEnd_toStartOf="@id/tvPopulationDensity"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPopulationDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/body_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/tvTextPopulationDensity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTextPopulationDensity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
